@@ -5,12 +5,17 @@
 }
 
 /* header part start */
-
 header{
+    
+}
+
+.header-div{
     width: 100%;
     height: 80px;
     background-color:#FFFFFF;
     display: flex;
+    position: fixed;
+    z-index: 10;
    
 }
 .logo{
@@ -32,15 +37,18 @@ header ul{
 }
 header ul li a{
     text-decoration: none;
-    padding: 20px;
+}
+header ul li a h6{
+    
+    padding: 10px;
     color: black;
     font-size: 15px;
     font-weight:600;
     
 }
-header ul li a:hover{
+header ul li a h6:hover{
     color:#7F97FF;
-    
+    transition: all 0.35s ease-in;
     
 }
 /* header part end */
@@ -51,6 +59,7 @@ header ul li a:hover{
     background-color: #f9f9ff;
     width: 100%;
     display: flex;
+    padding-top:100px ;
     
 }
 .section-1 .part-1{
@@ -96,6 +105,14 @@ header ul li a:hover{
     background-color: #8393ff;
     border: none;
     
+}
+.section-1 .part-1 .first-a .first-btn:hover{
+    background-color: #8293ff;
+    color: white;
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0, 0.5);
 }
 .section-1 .part-1 .first-a .first-btn{
     text-decoration: none;
@@ -159,6 +176,14 @@ header ul li a:hover{
     cursor: pointer;
     
 }
+.section-2 .part-4 .second-a .second-btn:hover{
+    background-color: #8293ff;
+    color: white;
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0, 0.5);
+}
 
 /*  section 2nd end */
 /*  section 3rd start */
@@ -194,6 +219,14 @@ header ul li a:hover{
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 5px 10px 10px #ddd;
+}
+.section-3 .svc:hover{
+    /* background-color: #8293ff; */
+    /* color: white; */
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    /* box-shadow: 0 8px 12px 0 rgba(0,0,0, 0.5); */
 }
 .section-3 i{
     color: rgba(0,0,0,0.7);
@@ -245,15 +278,25 @@ header ul li a:hover{
     
 }
 .section-4 img{
-    padding:20px 70px;
     align-items: center;
     width: 450px;
-    border-radius:15%;
+    border-radius:10%;
     margin-top: -80px;
+    height: 350px;
+    width: 300px;
     
 }
+.section-4 .project .project-left{
+    margin-right:100px ;
+}
 .section-4 img:hover{
- opacity: 0.9;
+    /* background-color: #8293ff;
+    color: white; */
+   
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    /* box-shadow: 0 8px 12px 0 rgba(0,0,0, 0.5); */
 }
 
 .section-4 .project .project-h1{
@@ -261,6 +304,7 @@ header ul li a:hover{
     text-align: center;
     color: rgba(0,0,0,0.9);
     font-family: sans-serif;
+    margin-top: 10px;
 }
 .section-4 .project .project-p{
     font-size: 20px;
@@ -431,6 +475,7 @@ footer .letter{
 .letter input{
     padding:10px 150px 10px 10px;
     border: none;
+    outline: none;
     border-radius: 0;
 }
 .letter a .footer-btn{
@@ -440,7 +485,7 @@ footer .letter{
     outline: none;
     border: none;
     cursor: pointer;
-    padding:6px 15px;
+    padding:7px 15px;
 }
 }
 
